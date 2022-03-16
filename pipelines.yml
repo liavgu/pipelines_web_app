@@ -15,8 +15,8 @@ pipelines:
         type: Bash
         configuration:
           nodePool: ubuntu
-          inputResources:
-            - name: Nginx_app_3
+          # inputResources:
+            # - name: Nginx_app_3
         execution:
           onExecute:
             - ls
