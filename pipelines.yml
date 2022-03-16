@@ -2,7 +2,7 @@ resources:
   - name: Nginx_app_3
     type: Image
     configuration:
-      registry: Mydocker
+      registry: MyArtifactory
       sourceRepository: local-docker-repo
       imageName: appimage
       imageTag: latest
@@ -18,7 +18,7 @@ pipelines:
           inputResources:
             - name: Nginx_app_3
           integrations:
-            - name: Mydocker
+            - name: MyArtifactory
         execution:
           onExecute:
             - ls
