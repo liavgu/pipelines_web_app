@@ -1,8 +1,7 @@
 resources:
-  - name: liavg
-    type: GitRepo
+  - name: Test
+    type: Image
     Configuration:
-      gitPtovider: liavgu
-      path: liavgu/pipelines_web_app
-      branches:
-        include: main
+      sourceRepository: local-docker-repo
+      imageName: appimage
+      imageTag: latest
