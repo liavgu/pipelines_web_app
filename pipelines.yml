@@ -8,18 +8,18 @@ resources:
       imageTag: latest
 
 
-pipelines:
-  - name: pipelines_appimage
-    steps:
-      - name: step_Image_1
-        type: Bash
-        configuration:
-          nodePool: ubuntu
-          inputResources:
-            - name: Test
-        execution:
-          onExecute:
-            - ls
-            - pwd
-            - ifconfig
-            - echo "liav ha gever"
+# pipelines:
+#   - name: pipelines_appimage
+#     steps:
+#       - name: step_Image_1
+#         type: Bash
+#         configuration:
+#           nodePool: ubuntu
+#           inputResources:
+#             - name: Test
+#         execution:
+#           onExecute:
+#             - ls
+#             - pwd
+#             - ifconfig
+#             - echo "liav ha gever"
