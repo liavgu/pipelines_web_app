@@ -2,7 +2,7 @@ resources:
   - name: Nginx_app_3
     type: Image
     configuration:
-      registry: MyArtifactory
+      registry: Mydocker
       sourceRepository: local-docker-repo
       imageName: appimage
       imageTag: latest
