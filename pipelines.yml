@@ -5,9 +5,9 @@ resources:
       registry: MyArtifactory
       sourceRepository: local-docker-repo
       imageName: appimage
-      imageTag: latest
+      imageTag: 1809-latest
       autoPull: true
-
+      
 pipelines:
   - name: pipelines_appimage
     steps:
@@ -19,6 +19,6 @@ pipelines:
             - name: Nginx_app_3
         execution:
           onExecute:
-            - id
+            - ls
+            - pwd
             - echo "liav ha gever"
-            - service --status-all
