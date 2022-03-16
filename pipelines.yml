@@ -21,4 +21,4 @@ pipelines:
           onExecute:
             - ls
             - pwd
-            - echo "liav ha gever"
+            - echo "aaaaaa"
