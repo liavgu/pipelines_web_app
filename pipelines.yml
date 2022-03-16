@@ -1,11 +1,11 @@
-# resources:
-  # - name: Nginx_app
-  #   type: Image
-  #   Configuration:
-  #     registry: MyArtifactory
-  #     sourceRepository: local-docker-repo
-  #     imageName: appimage
-  #     imageTag: latest
+resources:
+  - name: Nginx_app
+    type: Image
+    Configuration:
+      registry: MyArtifactory
+      sourceRepository: local-docker-repo
+      imageName: appimage
+      imageTag: latest
 
 
 pipelines:
@@ -15,8 +15,8 @@ pipelines:
         type: Bash
         configuration:
           nodePool: ubuntu
-          # inputResources:
-          #   - name: Nginx_app
+          inputResources:
+            - name: Nginx_app
         execution:
           onExecute:
             - ls
