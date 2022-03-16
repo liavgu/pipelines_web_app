@@ -5,9 +5,9 @@ resources:
       registry: MyArtifactory
       sourceRepository: local-docker-repo
       imageName: appimage
-      imageTag: 1809-latest
+      imageTag: latest
       autoPull: true
-      
+
 pipelines:
   - name: pipelines_appimage
     steps:
