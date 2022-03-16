@@ -1,4 +1,4 @@
-resources:
+# resources:
   # - name: Nginx_app
   #   type: Image
   #   Configuration:
