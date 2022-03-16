@@ -9,7 +9,7 @@ resources:
       autoPull: true
       
 pipelines:
-  - name: pipelines_liav_sql
+  - name: pipelines_appimage_2
     steps:
       - name: step_Image_1
         type: Bash
