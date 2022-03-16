@@ -17,6 +17,8 @@ pipelines:
           nodePool: ubuntu
           inputResources:
             - name: Nginx_app_3
+          integrations:
+            - name: Mydocker
         execution:
           onExecute:
             - ls
