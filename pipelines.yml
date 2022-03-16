@@ -1,22 +1,22 @@
 resources:
-  - name: Nginx_app_4
+  - name: Nginx_app_3
     type: Image
     configuration:
       registry: MyArtifactory
       sourceRepository: local-docker-repo
-      imageName: liav_sql
-      imageTag: latest
+      imageName: appimage
+      imageTag: 1809-latest
       autoPull: true
       
 pipelines:
-  - name: pipelines_appimage_2
+  - name: pipelines_appimage
     steps:
       - name: step_Image_1
         type: Bash
         configuration:
-          nodePool: ubuntu_new
+          nodePool: ubuntu
           inputResources:
-            - name: Nginx_app_4
+            - name: Nginx_app_3
         execution:
           onExecute:
             - ls
