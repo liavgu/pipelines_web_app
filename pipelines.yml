@@ -1,13 +1,13 @@
 resources:
   - name: Nginx_app_3
     type: Image
-    Configuration:
+    configuration:
       registry: MyArtifactory
       sourceRepository: local-docker-repo
       imageName: appimage
-      imageTag: latest
-
-
+      imageTag: 1809-latest
+      autoPull: true
+      
 pipelines:
   - name: pipelines_appimage
     steps:
@@ -15,8 +15,8 @@ pipelines:
         type: Bash
         configuration:
           nodePool: ubuntu
-          # inputResources:
-            # - name: Nginx_app_3
+          inputResources:
+            - name: Nginx_app_3
         execution:
           onExecute:
             - ls
