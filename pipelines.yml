@@ -1,5 +1,5 @@
 resources:
-  - name: Test
+  - name: Nginx_app
     type: Image
     Configuration:
       registry: MyArtifactory
