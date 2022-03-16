@@ -2,6 +2,7 @@ resources:
   - name: Test
     type: Image
     Configuration:
+      registry: MyArtifactory
       sourceRepository: local-docker-repo
       imageName: appimage
       imageTag: latest
