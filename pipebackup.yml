@@ -1,0 +1,24 @@
+resources:
+  - name: Nginx_app_3
+    type: Image
+    configuration:
+      registry: Mydocker
+      sourceRepository: local-docker-repo
+      imageName: appimage
+      imageTag: latest
+      autoPull: true
+      
+pipelines:
+  - name: pipelines_appimage
+    steps:
+      - name: step_Image_1
+        type: Bash
+        configuration:
+          nodePool: ubuntu
+          inputResources:
+            - name: Nginx_app_3
+        execution:
+          onExecute:
+            - ls
+            - pwd
+            - echo "aaaaaa"
