@@ -14,7 +14,7 @@ pipelines:
       - name: step_Image_1
         type: Bash
         configuration:
-          nodePool: ubuntu
+          nodePool: ubuntu_new
           inputResources:
             - name: Nginx_app_4
         execution:
