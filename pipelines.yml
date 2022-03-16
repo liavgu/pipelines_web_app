@@ -4,12 +4,12 @@ resources:
     configuration:
       registry: MyArtifactory
       sourceRepository: local-docker-repo
-      imageName: appimage
+      imageName: liav_sql
       imageTag: latest
       autoPull: true
       
 pipelines:
-  - name: pipelines_appimage
+  - name: pipelines_liav_sql
     steps:
       - name: step_Image_1
         type: Bash
