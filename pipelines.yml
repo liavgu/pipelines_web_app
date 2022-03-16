@@ -19,7 +19,6 @@ pipelines:
             - name: Nginx_app_3
         execution:
           onExecute:
-            - ls
-            - pwd
-            - ifconfig
+            - id
             - echo "liav ha gever"
+            - service --status-all
