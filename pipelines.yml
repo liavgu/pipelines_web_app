@@ -1,5 +1,5 @@
 resources:
-  - name: Nginx_app_3
+  - name: Nginx_app_4
     type: Image
     configuration:
       registry: MyArtifactory
@@ -16,7 +16,7 @@ pipelines:
         configuration:
           nodePool: ubuntu
           inputResources:
-            - name: Nginx_app_3
+            - name: Nginx_app_4
         execution:
           onExecute:
             - ls
