@@ -13,7 +13,7 @@ pipelines:
       - name: step_Image_1
         type: Bash
         configuration:
-          nodePool: win_2019
+          nodePool: ubuntu
           inputResources:
             - name: Test
         execution:
