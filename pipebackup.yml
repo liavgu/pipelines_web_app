@@ -1,22 +1,24 @@
 resources:
-  - name: Nginx_app_3
+  - name: NewTest
     type: Image
     configuration:
-      registry: Mydocker
-      sourceRepository: local-docker-repo
-      imageName: appimage
+      registry: MyDockerRepo
+      sourceRepository: liav-local-repo
+      imageName: liavacademy.jfrogdev.org/liav-local-repo/webinfra
       imageTag: latest
       autoPull: true
       
 pipelines:
-  - name: pipelines_appimage
+  - name: Test_2
     steps:
       - name: step_Image_1
         type: Bash
         configuration:
           nodePool: ubuntu
           inputResources:
-            - name: Nginx_app_3
+            - name: NewTest
+          integrations:
+            - name: MyDockerRepo
         execution:
           onExecute:
             - ls
