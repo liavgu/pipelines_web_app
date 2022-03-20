@@ -4,7 +4,7 @@ resources:
     configuration:
       registry: MyArtifactory
       sourceRepository: liav-local-repo
-      imageName: liav_sql
+      imageName: webinfra
       imageTag: latest
       autoPull: true
       
