@@ -1,9 +1,9 @@
 resources:
-  - name: Nginx_app_3
+  - name: webinfra
     type: Image
     configuration:
       registry: MyArtifactory
-      sourceRepository: local-docker-repo
+      sourceRepository: liav-local-repo
       imageName: liav_sql
       imageTag: latest
       autoPull: true
