@@ -24,3 +24,13 @@ pipelines:
             - ls
             - pwd
             - echo "aaaaaa"
+
+  - name: webinfra_build
+    type: DockerBuild
+    configuration:
+      dockerFileLocation: .
+      dockerFileName: Dockerfile
+      dockerImageName: liavacademy.jfrogdev.org/liav-local-repo/webinfra_dev
+      dockerImageTag: ${run_number}
+      integrations:
+        - name: MyDockerRepo
