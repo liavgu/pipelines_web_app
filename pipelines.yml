@@ -1,24 +1,24 @@
 resources:
-  - name: webinfra
+  - name: liavs
     type: Image
     configuration:
-      registry: MyArtifactory
+      registry: MyDockerRepo
       sourceRepository: liav-local-repo
       imageName: webinfra
       imageTag: latest
       autoPull: true
       
 pipelines:
-  - name: New_pipelineTest
+  - name: Test_2
     steps:
       - name: step_Image_1
         type: Bash
         configuration:
           nodePool: ubuntu
           inputResources:
-            - name: webinfra
+            - name: liavs
           integrations:
-            - name: MyArtifactory
+            - name: MyDockerRepo
         execution:
           onExecute:
             - ls
