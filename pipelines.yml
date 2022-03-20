@@ -16,7 +16,7 @@ pipelines:
         configuration:
           nodePool: ubuntu
           inputResources:
-            - name: Nginx_app_3
+            - name: webinfra
           integrations:
             - name: MyArtifactory
         execution:
