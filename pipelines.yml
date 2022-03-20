@@ -9,7 +9,7 @@ resources:
       autoPull: true
       
 pipelines:
-  - name: pipelines_appimage
+  - name: New_pipelineTest
     steps:
       - name: step_Image_1
         type: Bash
