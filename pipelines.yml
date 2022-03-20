@@ -1,5 +1,5 @@
 resources:
-  - name: liavs
+  - name: NewTest
     type: Image
     configuration:
       registry: MyDockerRepo
@@ -16,7 +16,7 @@ pipelines:
         configuration:
           nodePool: ubuntu
           inputResources:
-            - name: liavs
+            - name: NewTest
           integrations:
             - name: MyDockerRepo
         execution:
