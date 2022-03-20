@@ -4,7 +4,7 @@ resources:
     configuration:
       registry: MyDockerRepo
       sourceRepository: liav-local-repo
-      imageName: webinfra
+      imageName: liavacademy.jfrogdev.org/liav-local-repo/webinfra
       imageTag: latest
       autoPull: true
       
